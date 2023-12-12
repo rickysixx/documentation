@@ -18,7 +18,7 @@ You can create a direct, one-on-one chat by searching for the name of a user, a 
 
 .. image:: images/chat-with-one-user.png
 
-If you want to create a custom group conversation, click the ``⋮`` button next to the filters button and then on ``Create a new conversation``. 
+If you want to create a custom group conversation, click the button next to the search field and filters button and then on ``Create a new conversation``.
 
 .. image:: images/create-new-conversation.png
     :width: 300px
@@ -149,7 +149,7 @@ You can access your settings and choose a different webcam, microphone and other
 .. image:: images/media-settings.png
     :width: 300px
 
-or change the background 
+From there media settings dialog, you can also change the background of your video.
 
 .. image:: images/background-settings-in-call.png
     :width: 300px
