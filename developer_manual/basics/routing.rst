@@ -15,13 +15,15 @@ Routes map a URL and a method to a controller method. Routes are defined inside 
         ],
     ];
 
-Since Nextcloud 29 you can also use an attribute on the Controller method to define routes.
-It supports all the same parameters (except for ``name`` which is not needed).
-The type argument accepts ``Route::TYPE_INDEX`` and ``Route::TYPE_OCS`` which map to the ``routes`` and ``ocs`` keys in routes.php respectively.
+Since Nextcloud 29 you can also use an attributes on the Controller method to define routes.
+They supports all the same parameters (except for ``name`` which is not needed).
+``FrontpageRoute`` has to be used for routes that were in the ``routes`` section and ``ApiRoute`` has to be used for routes that were in the ``ocs`` section.
 
 .. code-block:: php
 
-    #[Route(Route::TYPE_INDEX, verb: 'GET', url: '/')]
+    #[FrontpageRoute(verb: 'GET', url: '/')]
+
+    #[ApiRoute(verb: 'GET', url: '/')]
 
 The route array contains the following parts:
 
